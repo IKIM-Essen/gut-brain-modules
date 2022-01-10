@@ -7,5 +7,7 @@ rule test_rule:
         "results/test-{sample}-{url}.txt",
     log:
         "logs/test-{sample}-{url}.log",
+    conda:
+        "../envs/example.yaml"
     shell:
         "echo 'This is an example rule for sample {wildcards.sample} with url {wildcards.url}' > {output} 2> {log}"
