@@ -1,0 +1,15 @@
+*
+!.tests
+!.github
+!.github/**
+!config
+!config/**
+!resources
+!resources/**
+!workflow
+!workflow/**
+!.gitignore
+!.gitattributes
+!.editorconfig
+!LICENSE
+!README.md
