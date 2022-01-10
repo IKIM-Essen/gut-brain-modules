@@ -4,9 +4,12 @@
 
 report: "report/workflow.rst"
 
+
 configfile: "config/config.yaml"
 
+
 pepfile: config["pepfile"]
+
 
 include: "rules/common.smk"
 include: "rules/example.smk"
@@ -16,4 +19,9 @@ include: "rules/example.smk"
 # Subsequent target rules can be specified below. They should start with all_*.
 rule all:
     input:
-        expand("results/test-{sample}-{url}.txt", zip, sample=get_samples(), url=get_urls())
+        expand(
+            "results/test-{sample}-{url}.txt",
+            zip,
+            sample=get_samples(),
+            url=get_urls(),
+        ),
