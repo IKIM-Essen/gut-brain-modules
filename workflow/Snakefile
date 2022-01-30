@@ -13,6 +13,7 @@ pepfile: config["pepfile"]
 
 include: "rules/common.smk"
 include: "rules/example.smk"
+include: "rules/download.smk"
 
 
 # The first rule should define the default target files
@@ -25,3 +26,4 @@ rule all:
             sample=get_samples(),
             url=get_urls(),
         ),
+        "results/test/GUT_GENOME107880.gff.gz"
