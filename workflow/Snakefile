@@ -21,9 +21,8 @@ include: "rules/download.smk"
 rule all:
     input:
         expand(
-            "results/test-{sample}-{url}.txt",
-            zip,
-            sample=get_samples(),
-            url=get_urls(),
+            "results/test/{sample}.gff.gz",
+            sample = get_samples(),
         ),
-        "results/test/GUT_GENOME107880.gff.gz"
+        
+     

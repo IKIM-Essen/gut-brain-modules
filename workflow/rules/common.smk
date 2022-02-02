@@ -4,10 +4,12 @@ import pandas as pd
 
 
 def get_samples():
-    print(list(pep.sample_table["sample_name"].values))
     return list(pep.sample_table["sample_name"].values)
 
 
 def get_urls():
-    print(list(pep.sample_table["url"].values))
+    print("this prints:", list(pep.sample_table["url"].values)[0])
     return list(pep.sample_table["url"].values)
+
+def get_url_for_sample(wildcards):
+    return pep.sample_table.loc[wildcards.sample, "url"]

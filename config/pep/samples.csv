@@ -1,3 +1,6 @@
 sample_name,url
-GUT1,ftp.example.gut1.com
-GUT2,ftp.example.gut2.com
+GUT_GENOME107880,ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v1.0/all_genomes/MGYG-HGUT-024/MGYG-HGUT-02492/genomes12/GUT_GENOME107880.gff.gz
+GUT_GENOME107881,ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v1.0/all_genomes/MGYG-HGUT-024/MGYG-HGUT-02478/genomes6/GUT_GENOME107881.gff.gz
+GUT_GENOME107882,ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v1.0/all_genomes/MGYG-HGUT-041/MGYG-HGUT-04158/genomes1/GUT_GENOME107882.gff.gz
+GUT_GENOME107883,ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v1.0/all_genomes/MGYG-HGUT-002/MGYG-HGUT-00231/genomes1/GUT_GENOME107883.gff.gz
+GUT_GENOME107884,ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v1.0/all_genomes/MGYG-HGUT-000/MGYG-HGUT-00078/genomes4/GUT_GENOME107884.gff.gz
