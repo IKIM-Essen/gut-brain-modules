@@ -1,4 +1,6 @@
-#Test rule, showcasing how Snakemake works
+# An collection of Snakemake rules imported in the main Snakefile.
+# Put all your rules an a Snakemake Module in this directory.
+
 
 rule test_rule:
     output:
