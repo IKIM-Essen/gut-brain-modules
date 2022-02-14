@@ -13,6 +13,7 @@ pepfile: config["pepfile"]
 
 include: "rules/common.smk"
 include: "rules/example.smk"
+include: "rules/download.smk"
 
 
 # The first rule should define the default target files
@@ -20,8 +21,8 @@ include: "rules/example.smk"
 rule all:
     input:
         expand(
-            "results/test-{sample}-{url}.txt",
-            zip,
-            sample=get_samples(),
-            url=get_urls(),
+            "results/test/{sample}.gff.gz",
+            sample = get_samples(),
         ),
+        
+     

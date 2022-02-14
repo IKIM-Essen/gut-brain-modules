@@ -8,4 +8,8 @@ def get_samples():
 
 
 def get_urls():
+    print("this prints:", list(pep.sample_table["url"].values)[0])
     return list(pep.sample_table["url"].values)
+
+def get_url_for_sample(wildcards):
+    return pep.sample_table.loc[wildcards.sample, "url"]
