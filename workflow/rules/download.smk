@@ -2,7 +2,7 @@
 
 rule download_rule:
     output:
-        "results/test/{sample}.gff.gz",
+        "results/test/{sample}.gff",
     log:
         "logs/test/{sample}.log",
     params:
