@@ -21,7 +21,7 @@ include: "rules/download.smk"
 rule all:
     input:
         expand(
-            "results/test/{sample}.gff.gz",
+            "results/test/{sample}.gff",
             sample = get_samples(),
         ),
         
