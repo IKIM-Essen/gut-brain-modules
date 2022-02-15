@@ -1,1 +1,8 @@
-# conda environments needed for the workflow should be stored here.
+channels:
+  - bioconda
+  - conda-forge
+  - default
+dependencies:
+  - pip
+  - pip:
+      - jsonapi-client==0.9.9
