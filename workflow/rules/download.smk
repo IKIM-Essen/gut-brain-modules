@@ -2,7 +2,8 @@
 
 rule download_rule:
     output:
-        "results/test/{sample}.gff.gz",
+        temp("results/genomes/gff_files/{sample}.gff"),
+    threads: 8
     log:
         "logs/test/{sample}.log",
     params:

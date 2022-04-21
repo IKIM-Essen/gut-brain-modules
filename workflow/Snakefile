@@ -14,15 +14,15 @@ pepfile: config["pepfile"]
 include: "rules/common.smk"
 include: "rules/example.smk"
 include: "rules/download.smk"
+include: "rules/get_genome_IDs.smk"
+include: "rules/sample_table_assembly.smk"
+include: "rules/get_GBMs_in_microorganism.smk"
+include: "rules/convert_GBMs_to_final_JSON_and_CSV.smk"
 
 
 # The first rule should define the default target files
 # Subsequent target rules can be specified below. They should start with all_*.
 rule all:
     input:
-        expand(
-            "results/test/{sample}.gff.gz",
-            sample = get_samples(),
-        ),
-        
-     
+        "results/files/GBMs_in_Microorganisms_final.json",
+        "results/tables/GBMs_in_Microorganisms_final.csv"
