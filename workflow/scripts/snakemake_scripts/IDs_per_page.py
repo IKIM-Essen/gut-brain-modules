@@ -18,8 +18,9 @@ for i in range(1, pages_total + 1): # limiter_for_testing needs to be taken out 
     innerscope = data["data"]
     for result in innerscope:
         IDs.append(result["id"])
-print("TEST:", snakemake.ourput[0])
 
 # with open(snakemake.output[0], "w") as output:
 #     for i in IDs:
 #         output.write(i + "\n")
+
+# snakemake.wildcards.page_ID
