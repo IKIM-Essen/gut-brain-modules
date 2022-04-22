@@ -1,4 +1,5 @@
-#Test rule, showcasing how Snakemake works
+# Test rule, showcasing how Snakemake works
+
 
 rule test_rule:
     output:
