@@ -14,7 +14,6 @@ pepfile: config["pepfile"]
 include: "rules/common.smk"
 include: "rules/example.smk"
 include: "rules/download.smk"
-include: "rules/get_genome_IDs.smk"
 include: "rules/sample_table_assembly.smk"
 include: "rules/get_GBMs_in_microorganism.smk"
 include: "rules/convert_GBMs_to_final_JSON_and_CSV.smk"
