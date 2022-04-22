@@ -17,10 +17,10 @@ for GBMs in GBM_ID_list:
         if GBMs not in GBMs_in_Microorganisms[species]:
             GBMs_in_Microorganisms[species][GBMs] = [0]
 
-json_object = json.dumps(GBMs_in_Microorganisms, sort_keys = True, indent = 4)
+json_object = json.dumps(GBMs_in_Microorganisms, sort_keys=True, indent=4)
 
 with open(snakemake.output[0], "w") as output:
     output.write(json_object)
 
-df = pd.read_json(snakemake.output[0], orient = "index")
+df = pd.read_json(snakemake.output[0], orient="index")
 df.to_csv(snakemake.output[1])

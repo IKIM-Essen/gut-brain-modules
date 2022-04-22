@@ -24,4 +24,4 @@ include: "rules/convert_GBMs_to_final_JSON_and_CSV.smk"
 rule all:
     input:
         "results/files/GBMs_in_Microorganisms_final.json",
-        "results/tables/GBMs_in_Microorganisms_final.csv"
+        "results/tables/GBMs_in_Microorganisms_final.csv",

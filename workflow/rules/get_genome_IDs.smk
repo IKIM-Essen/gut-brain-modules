@@ -1,6 +1,6 @@
 rule get_genome_IDs:
     output:
-        "results/texts/{page_ID}.txt"
+        "results/texts/{page_ID}.txt",
     conda:
         "../envs/python_env.yaml"
     script:
